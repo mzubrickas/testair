@@ -6,18 +6,32 @@ window.addEventListener('DOMContentLoaded', () => {
     const dateTime = localStorage.getItem('dateTime');
 
     const date = new Date(dateTime * 1000); 
-    const formattedDate = date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+    const weekday = date.toLocaleDateString(undefined, { weekday: 'short' });
+    const day = date.toLocaleDateString(undefined, { day: 'numeric' }); 
     
     const cityNameElem = document.getElementById('city-name');
     const temperatureElem = document.getElementById('temperature');
-    const weatherDescriptionElem = document.getElementById('weather-description');
-    const weatherDateElem = document.getElementById('weather-date');
+    const weatherDescriptionElem1 = document.getElementById('weather-description-1');
+    const weatherDescriptionElem2 = document.getElementById('weather-description-2');
+    const weatherWeekdayElem = document.getElementById('weather-weekday');
+    const weatherDayElem = document.getElementById('weather-day');
     const weatherIconElem = document.getElementById('weather-icon');
-
- 
+    
+    
+    
     cityNameElem.textContent = cityName;
-    temperatureElem.textContent = temperature;
-    weatherDescriptionElem.textContent = weatherDescription;
-    weatherDateElem.textContent = formattedDate;
+    temperatureElem.textContent = parseFloat(temperature).toFixed(0);
+
+    const descriptionWords = weatherDescription.split(' ');
+    if (descriptionWords.length > 1) {
+        weatherDescriptionElem1.textContent = descriptionWords[0];
+        weatherDescriptionElem2.textContent = descriptionWords[1];
+    } else {
+        weatherDescriptionElem1.textContent = weatherDescription;
+        weatherDescriptionElem2.textContent = '';
+    }
+    
+    weatherWeekdayElem.textContent = weekday; 
+    weatherDayElem.textContent = day;
     weatherIconElem.src = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
 });

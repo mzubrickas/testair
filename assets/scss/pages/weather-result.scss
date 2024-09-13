@@ -1,0 +1,64 @@
+.wheather-result-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #ddd8d8;
+    box-shadow: 10px 10px 21px -7px rgba(0,0,0,0.75);
+
+    .wheather-card-top{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .icon {
+            width: 50px;
+        }
+
+        .wheather-descriotion-block {
+            display: flex;
+            gap: 7px;
+
+            .first-description {
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .wheather-card-mid{
+        display: flex;
+        justify-content: center;
+
+        .temp {
+            font-size: 100px;
+        }
+
+        .degree {
+            font-size: 100px;
+        }
+    }
+
+    .wheather-card-bottom{
+        display: flex;
+        justify-content: space-between;
+        
+        .city {
+            display: flex;
+            align-items: flex-end;    
+        }
+
+        .weekday-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:5px;
+
+            .weekday {
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

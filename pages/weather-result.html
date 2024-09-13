@@ -11,14 +11,28 @@
     <title>Weather Results</title>
 </head>
 <body>
-
-        <p>City: <span id="city-name"></span></p>
-        <p>Temperature: <span id="temperature"></span> °C</p>
-        <p>Description: <span id="weather-description"></span></p>
-        <p>Date: <span id="weather-date"></span></p>
-        <img id="weather-icon" alt="Weather Icon">
-
+    <div class="container">
+        <div class="wheather-result-block">
+            <div class="wheather-card-top">
+                <img class="icon" id="weather-icon" alt="Weather Icon">
+                <div class="wheather-descriotion-block" id="weather-description">
+                    <span class="first-description" id="weather-description-1"></span>
+                    <span class="second-description" id="weather-description-2"></span> 
+                </div>
+            </div>
+            <div class="wheather-card-mid">
+                <div class="temp" id="temperature"></div>
+                <span class="degree">°</span>
+            </div>
+            <div class="wheather-card-bottom">
+                <div class="city" id="city-name"></div>
+                <div class="weekday-block">
+                    <span class="weekday" id="weather-weekday"></span>
+                    <span class="day" id="weather-day"></span>
+                </div>
+            </div>
+        </div>
+    </div> 
     <script src="../assets/js/weather-result.js"></script>
-
 </body>
 </html>

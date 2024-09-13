@@ -1,4 +1,4 @@
-.wheather-result-block {
+.weather-result-block {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
     background: #ddd8d8;
     box-shadow: 10px 10px 21px -7px rgba(0,0,0,0.75);
 
-    .wheather-card-top{
+    .weather-card-top{
         display: flex;
         align-items: center;
         gap: 10px;
@@ -17,7 +17,7 @@
             width: 50px;
         }
 
-        .wheather-descriotion-block {
+        .weather-descriotion-block {
             display: flex;
             gap: 7px;
 
@@ -27,7 +27,7 @@
         }
     }
 
-    .wheather-card-mid{
+    .weather-card-mid{
         display: flex;
         justify-content: center;
 
@@ -40,7 +40,7 @@
         }
     }
 
-    .wheather-card-bottom{
+    .weather-card-bottom{
         display: flex;
         justify-content: space-between;
         

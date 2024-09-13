@@ -1,4 +1,4 @@
-.wheather-result-block {
+.weather-result-block {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -8,46 +8,46 @@
   background: #ddd8d8;
   box-shadow: 10px 10px 21px -7px rgba(0, 0, 0, 0.75);
 }
-.wheather-result-block .wheather-card-top {
+.weather-result-block .weather-card-top {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.wheather-result-block .wheather-card-top .icon {
+.weather-result-block .weather-card-top .icon {
   width: 50px;
 }
-.wheather-result-block .wheather-card-top .wheather-descriotion-block {
+.weather-result-block .weather-card-top .weather-descriotion-block {
   display: flex;
   gap: 7px;
 }
-.wheather-result-block .wheather-card-top .wheather-descriotion-block .first-description {
+.weather-result-block .weather-card-top .weather-descriotion-block .first-description {
   text-transform: capitalize;
 }
-.wheather-result-block .wheather-card-mid {
+.weather-result-block .weather-card-mid {
   display: flex;
   justify-content: center;
 }
-.wheather-result-block .wheather-card-mid .temp {
+.weather-result-block .weather-card-mid .temp {
   font-size: 100px;
 }
-.wheather-result-block .wheather-card-mid .degree {
+.weather-result-block .weather-card-mid .degree {
   font-size: 100px;
 }
-.wheather-result-block .wheather-card-bottom {
+.weather-result-block .weather-card-bottom {
   display: flex;
   justify-content: space-between;
 }
-.wheather-result-block .wheather-card-bottom .city {
+.weather-result-block .weather-card-bottom .city {
   display: flex;
   align-items: flex-end;
 }
-.wheather-result-block .wheather-card-bottom .weekday-block {
+.weather-result-block .weather-card-bottom .weekday-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
 }
-.wheather-result-block .wheather-card-bottom .weekday-block .weekday {
+.weather-result-block .weather-card-bottom .weekday-block .weekday {
   text-transform: uppercase;
   letter-spacing: 1px;
 }

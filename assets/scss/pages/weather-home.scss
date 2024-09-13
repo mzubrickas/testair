@@ -30,6 +30,7 @@
         }
 
         button {
+            cursor: pointer;
             width: 60px;
             border: 2px solid white;
             border-radius: 5px;
@@ -39,11 +40,29 @@
         }
     }
 
-   
     .home-error-text {
         margin: 0;
         padding: 10px 0 0 15px;
         color: #a2ff00;
         font-size: 14px;
     }
+
+    .home-history-btn-block {
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+
+        .home-history-btn {
+            cursor: pointer;
+            width: 120px;
+            padding: 5px;
+            border: 2px solid white;
+            border-radius: 5px;
+            background: white;
+            color: #96c93d;
+            font-size: 16px;
+        }
+    }
+
+    
 }

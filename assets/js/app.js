@@ -27,3 +27,29 @@ goBtn.addEventListener("click", function () {
         })
         
 });
+
+function storeWeatherData(data) {
+    localStorage.setItem("weatherDescription", data.weather[0].description);
+    localStorage.setItem("weatherIcon", data.weather[0].icon); 
+    localStorage.setItem("temperature", data.main.temp);
+    localStorage.setItem("dateTime", data.dt);
+    localStorage.setItem("cityName", data.name);
+    
+    
+    let history = JSON.parse(localStorage.getItem("weatherHistory")) || [];
+    if (!history.some(item => item.cityName === data.name)) {
+        history.push({
+            cityName: data.name,
+            temperature: data.main.temp,
+            weatherDescription: data.weather[0].description,
+            weatherIcon: data.weather[0].icon, 
+            dateTime: data.dt
+        });
+    }
+    localStorage.setItem("weatherHistory", JSON.stringify(history));
+}
+
+let historyBtn = document.getElementById("history-btn");
+historyBtn.addEventListener("click", function () {
+    window.location.href = "pages/weather-history.html";
+});

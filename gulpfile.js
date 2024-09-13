@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass')); // Using Dart Sass
+const sass = require('gulp-sass')(require('sass')); 
 const browserSync = require('browser-sync').create();
 
 gulp.task('sass', function() {

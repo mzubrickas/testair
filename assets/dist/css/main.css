@@ -18,6 +18,14 @@ body {
   justify-content: center;
 }
 
+.container-history {
+  padding: 30px 0;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -44,7 +52,21 @@ header .back-link .back-text {
   color: #4c8df5;
 }
 
-.wheather-result-block {
+.weather-history-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 30px;
+  width: 100%;
+  gap: 20px;
+}
+
+.history-message {
+  color: #a2ff00;
+  font-size: 14px;
+}
+
+.weather-result-block {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -54,46 +76,46 @@ header .back-link .back-text {
   background: #ddd8d8;
   box-shadow: 10px 10px 21px -7px rgba(0, 0, 0, 0.75);
 }
-.wheather-result-block .wheather-card-top {
+.weather-result-block .weather-card-top {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.wheather-result-block .wheather-card-top .icon {
+.weather-result-block .weather-card-top .icon {
   width: 50px;
 }
-.wheather-result-block .wheather-card-top .wheather-descriotion-block {
+.weather-result-block .weather-card-top .weather-descriotion-block {
   display: flex;
   gap: 7px;
 }
-.wheather-result-block .wheather-card-top .wheather-descriotion-block .first-description {
+.weather-result-block .weather-card-top .weather-descriotion-block .first-description {
   text-transform: capitalize;
 }
-.wheather-result-block .wheather-card-mid {
+.weather-result-block .weather-card-mid {
   display: flex;
   justify-content: center;
 }
-.wheather-result-block .wheather-card-mid .temp {
+.weather-result-block .weather-card-mid .temp {
   font-size: 100px;
 }
-.wheather-result-block .wheather-card-mid .degree {
+.weather-result-block .weather-card-mid .degree {
   font-size: 100px;
 }
-.wheather-result-block .wheather-card-bottom {
+.weather-result-block .weather-card-bottom {
   display: flex;
   justify-content: space-between;
 }
-.wheather-result-block .wheather-card-bottom .city {
+.weather-result-block .weather-card-bottom .city {
   display: flex;
   align-items: flex-end;
 }
-.wheather-result-block .wheather-card-bottom .weekday-block {
+.weather-result-block .weather-card-bottom .weekday-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
 }
-.wheather-result-block .wheather-card-bottom .weekday-block .weekday {
+.weather-result-block .weather-card-bottom .weekday-block .weekday {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -127,6 +149,7 @@ header .back-link .back-text {
   color: rgba(128, 128, 128, 0.744);
 }
 .home-block .home-input-block button {
+  cursor: pointer;
   width: 60px;
   border: 2px solid white;
   border-radius: 5px;
@@ -139,4 +162,19 @@ header .back-link .back-text {
   padding: 10px 0 0 15px;
   color: #a2ff00;
   font-size: 14px;
+}
+.home-block .home-history-btn-block {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.home-block .home-history-btn-block .home-history-btn {
+  cursor: pointer;
+  width: 120px;
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: white;
+  color: #96c93d;
+  font-size: 16px;
 }

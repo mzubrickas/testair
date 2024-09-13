@@ -13,7 +13,7 @@ goBtn.addEventListener("click", function () {
     displayError('', errorMessage); 
 
     if (!city) {
-        displayError("Please enter a city name.", errorMessage);
+        displayError("Please enter a city name", errorMessage);
         return;
     }
 

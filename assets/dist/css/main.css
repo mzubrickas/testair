@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+input, button {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #4c8df5;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-block {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+.home-block .home-img-block {
+  padding-bottom: 20px;
+}
+.home-block .home-img-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home-block .home-input-block {
+  display: flex;
+  gap: 15px;
+}
+.home-block .home-input-block input {
+  height: 25px;
+  width: 100%;
+  padding: 5px 0 5px 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.home-block .home-input-block input::placeholder {
+  color: rgba(128, 128, 128, 0.744);
+}
+.home-block .home-input-block button {
+  width: 60px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: #96c93d;
+  color: white;
+  font-size: 16px;
+}
+.home-block .home-error-text {
+  margin: 0;
+  padding: 10px 0 0 15px;
+  color: #a2ff00;
+  font-size: 14px;
+}

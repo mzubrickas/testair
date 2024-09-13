@@ -5,8 +5,8 @@ input, button {
 
 body {
   background: #4c8df5;
-  overflow: hidden;
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 .container {
@@ -16,6 +16,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background: white;
+  border-bottom: 2px solid grey;
+}
+header .back-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+header .back-link .back-arrow {
+  width: 30px;
+  scale: 0.8;
+}
+header .back-link .back-arrow path {
+  fill: #4c8df5;
+}
+header .back-link .back-text {
+  position: relative;
+  left: -9px;
+  top: -3px;
+  color: #4c8df5;
 }
 
 .wheather-result-block {
